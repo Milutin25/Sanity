@@ -11,7 +11,7 @@ export const blogType = defineType({
         }),
         defineField({
             name: 'id',
-            type: 'number'
+            type: 'number',
         }),
         defineField({
             name: 'image',

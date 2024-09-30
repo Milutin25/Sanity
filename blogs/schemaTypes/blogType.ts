@@ -21,10 +21,10 @@ export const blogType = defineType({
             name: 'slug',
             type: 'slug',
             options: {source: 'name'},
-            validation: (rule) => rule
+            validation: (rule) => rule  // explain also 
             .required()
             .error(`Required to generate a page on the website`),
-            hidden: ({document}) => !document?.name
+            hidden: ({document}) => !document?.name // explain this 
         }), 
         defineField({
             name: 'date',
@@ -33,7 +33,7 @@ export const blogType = defineType({
         defineField({
             name: 'text',
             type: 'array',
-            of: [{type: 'block'}]
+            of: [{type: 'block'}]  //explain 
         }),
         defineField({
             name: 'tags',
